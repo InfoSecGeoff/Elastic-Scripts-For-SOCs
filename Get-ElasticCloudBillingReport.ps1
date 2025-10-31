@@ -12,10 +12,10 @@ OrgID values can be retrieved from the Deployments page in Elastic Cloud
 Options are Overview, Charts, Deployments, and ItemizedCosts
 
 .EXAMPLE 
-.\ElasticCloudBillingReport.ps1 -CloudApiKey "<your cloud API key>" -OrgId "<your org ID>" -ReportType "Deployments"
+.\Get-ElasticCloudBillingReport.ps1 -CloudApiKey "<your cloud API key>" -OrgId "<your org ID>" -ReportType "Deployments"
 
 .EXAMPLE 
-.\ElasticCloudBillingReport.ps1 -CloudApiKey "<your cloud API key>" -OrgId "<your org ID>" -FromDate "2025-01-22T02:00:00Z" -ToDate "2025-01-25T00:00:00Z" -ReportType "Deployments"
+.\Get-ElasticCloudBillingReport.ps1 -CloudApiKey "<your cloud API key>" -OrgId "<your org ID>" -FromDate "2025-01-22T02:00:00Z" -ToDate "2025-01-25T00:00:00Z" -ReportType "Deployments"
 #>
 
 param (
