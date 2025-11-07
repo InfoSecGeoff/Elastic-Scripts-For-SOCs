@@ -29,7 +29,7 @@ Filter for a specific client/customer name
 .\Get-KibanaSecurityAlertReport.ps1 -KibanaUrl "https://your-kibana.com" -ApiKey "your-key" -GlobalReport
 
 .EXAMPLE
-.\Get-KibanaSecurityAlertReport.ps1 -KibanaUrl "https://your-kibana.com" -ApiKey "your-key" -ClientFilter "Kentucky Society of CPA"
+.\Get-KibanaSecurityAlertReport.ps1 -KibanaUrl "https://your-kibana.com" -ApiKey "your-key"
 #>
 
 [CmdletBinding()]
