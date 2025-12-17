@@ -507,7 +507,7 @@ Write-Host "`n--- Detection Rules Summary ---" -ForegroundColor Cyan
 $rulesResponse = Invoke-KibanaApi -Endpoint "/api/detection_engine/rules/_find?per_page=10000" -Method "GET"
 
 if ($rulesResponse) {
-    $report.TotalRules = $rulesResponse.total ?? 0
+    $report.TotalRules = if ($null -ne $rulesResponse.total) { $rulesResponse.total } else { 0 }
     
     $enabledCount = 0
     $disabledCount = 0
